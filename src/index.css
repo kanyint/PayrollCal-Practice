@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Moderat";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(./assets/Fonts/Moderat-Light.ttf) format("truetype");
+  }
+
+  @font-face {
+    font-family: "TomatoGrotesk";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(./assets/Fonts/TomatoGrotesk-Regular.otf) format("opentype");
+  }
+
+  @layer base {
+    h1 {
+      @apply font-['TomatoGrotesk'];
+      @apply text-5xl;
+      @apply text-slate-800;
+    }
+    h2 {
+      @apply font-['TomatoGrotesk'];
+      @apply text-3xl;
+      @apply text-slate-800;
+    }
+    h3 {
+      @apply font-['TomatoGrotesk'];
+      @apply text-2xl;
+      @apply text-slate-800;
+    }
+    h4 {
+      @apply font-['TomatoGrotesk'];
+      @apply text-xl;
+      @apply text-slate-800;
+    }
+    p {
+      @apply font-['Moderat'];
+      @apply text-lg;
+      @apply text-sky-950;
+    }
+  }
+}
